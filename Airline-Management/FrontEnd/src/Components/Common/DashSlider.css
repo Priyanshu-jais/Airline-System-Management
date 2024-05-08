@@ -1,0 +1,46 @@
+
+.slider {
+	overflow: hidden;
+    
+}
+.slider-div-hero{
+    position: absolute;
+    color: rgb(0, 0, 0);
+    height: 45px;
+    width: 95%;
+    margin-left: 35px;
+    display: flex;
+    font-size: 14px;
+    font-weight: 600;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(255, 255, 255);
+    margin-top: 300px;
+    z-index: 1;
+
+}
+.slider a{
+    text-decoration: none;
+    color: rgb(81, 155, 152);
+    font-size: 14px;
+}
+
+@keyframes slider {
+	0% { left: 0; }
+	30% { left: 0; }
+	33% { left: -100%; }
+	63% { left: -100%; }
+	66% { left: -200%; }
+	95% { left: -200%; }
+	100% { left: 0; }
+}
+.slider figure {
+	width:300%;
+	position: relative;
+	animation: 9s slider infinite;
+}
+.slider figure img {
+	width: 33.333333333%;
+	height : 100%;
+	float: left;
+}
